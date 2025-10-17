@@ -1,0 +1,140 @@
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-icon {
+  background: linear-gradient(to right, #60a5fa, #a855f7);
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #60a5fa, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header-sub {
+  font-size: 1.2rem;
+  color: #bfdbfe;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  margin: 0.5rem ;
+  color: #60a5fa;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: white;
+}
+
+.dropdown-option {
+  background: #1e293b;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.predict-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, 
+    #3b82f6 0%, 
+    #8b5cf6 50%, 
+    #a855f7 100%
+  );
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  margin-top: 0.5rem;
+}
+
+.predict-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.predict-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.predict-btn:hover::before {
+  left: 100%;
+}
+
+.predict-btn:active {
+  transform: translateY(0);
+}
+
+.predict-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(34, 197, 94, 0.2);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.result h3 {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.result p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #22c55e;
+}
